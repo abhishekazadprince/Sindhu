@@ -44,9 +44,9 @@
                     colors: {
                         terracotta: { 400: '#ca8a04', 500: '#b45309', 600: '#92400e', 900: '#451a03' },
                         parchment: { 50: '#fdfbf7', 100: '#f5f0e6' },
-                        evidence: { bg: 'rgba(6, 78, 59, 0.3)', border: '#047857', text: '#34d399' },
-                        inference: { bg: 'rgba(30, 58, 138, 0.3)', border: '#1d4ed8', text: '#60a5fa' },
-                        speculation: { bg: 'rgba(88, 28, 135, 0.3)', border: '#7e22ce', text: '#c084fc' }
+                        evidence: { bg: 'rgba(16, 185, 129, 0.1)', border: '#059669', text: '#34d399' },
+                        inference: { bg: 'rgba(59, 130, 246, 0.1)', border: '#2563eb', text: '#60a5fa' },
+                        speculation: { bg: 'rgba(168, 85, 247, 0.1)', border: '#9333ea', text: '#c084fc' }
                     }
                 }
             }
@@ -228,156 +228,36 @@
     <!-- Global SVG Definitions for Academic Symbols -->
     <svg width="0" height="0" style="position:absolute; display:none;">
         <defs>
-            <g id="sym-sun">
-                <circle cx="10" cy="10" r="4" fill="#000"/>
-                <circle cx="10" cy="10" r="8" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="2,2"/>
-            </g>
-            <g id="sym-arrow">
-                <circle cx="10" cy="10" r="2" fill="#000"/>
-                <path d="M10,10 L10,2 M10,10 L18,10 M10,10 L10,18 M10,10 L2,10 M10,10 L16,4 M10,10 L4,16" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-bull">
-                <path d="M3,15 Q3,5 15,5 Q20,5 20,10 L25,10 L25,15 L20,15 L20,20 L15,20 L15,15 Z" fill="#000"/>
-            </g>
-            <g id="sym-elephant">
-                <path d="M2,15 Q2,5 12,5 Q22,5 22,15 L26,15 L26,20 L22,20 L22,24 L18,24 L18,20 L8,20 L8,24 L4,24 Z" fill="#000"/>
-            </g>
-            <g id="sym-tree">
-                <line x1="10" y1="20" x2="10" y2="4" stroke="#000" stroke-width="2"/>
-                <line x1="10" y1="14" x2="4" y2="8" stroke="#000" stroke-width="2"/>
-                <line x1="10" y1="10" x2="16" y2="4" stroke="#000" stroke-width="2"/>
-                <circle cx="4" cy="8" r="1.5" fill="#000"/><circle cx="16" cy="4" r="1.5" fill="#000"/>
-            </g>
-            <g id="sym-hill">
-                <path d="M4,18 Q10,8 16,18 Q22,8 28,18" fill="none" stroke="#000" stroke-width="2"/>
-            </g>
-            <g id="sym-triangle">
-                <polygon points="10,20 20,4 30,20" fill="none" stroke="#000" stroke-width="2"/>
-            </g>
-            <g id="sym-shield">
-                <path d="M5,5 L25,5 Q25,25 15,30 Q5,25 5,5" fill="none" stroke="#000" stroke-width="2"/>
-            </g>
-            <g id="sym-circle">
-                <circle cx="15" cy="15" r="10" fill="none" stroke="#000" stroke-width="2"/>
-            </g>
-            <g id="sym-terminal">
-                <circle cx="15" cy="10" r="5" fill="none" stroke="#000" stroke-width="2"/>
-                <path d="M10,20 Q15,15 20,20" fill="none" stroke="#000" stroke-width="2"/>
-            </g>
-            <g id="sym-six-armed">
-                <circle cx="10" cy="10" r="2" fill="#000"/>
-                <path d="M10,8 L10,2 M10,2 L12,4 M10,2 L8,4" stroke="#000" stroke-width="1.5" fill="none"/>
-                <path d="M10,12 L10,18 M10,18 L12,16 M10,18 L8,16" stroke="#000" stroke-width="1.5" fill="none"/>
-                <path d="M8,9 L3,6 M3,6 L5,5 M3,6 L3,8" stroke="#000" stroke-width="1.5" fill="none"/>
-                <path d="M12,11 L17,14 M17,14 L15,15 M17,14 L17,12" stroke="#000" stroke-width="1.5" fill="none"/>
-                <path d="M8,11 L3,14 M3,14 L3,12 M3,14 L5,15" stroke="#000" stroke-width="1.5" fill="none"/>
-                <path d="M12,9 L17,6 M17,6 L17,8 M17,6 L15,5" stroke="#000" stroke-width="1.5" fill="none"/>
-            </g>
-            <g id="sym-three-hill">
-                <path d="M6,18 Q8,12 10,18" fill="none" stroke="#000" stroke-width="1.5"/>
-                <path d="M10,18 Q12,12 14,18" fill="none" stroke="#000" stroke-width="1.5"/>
-                <path d="M8,12 Q10,6 12,12" fill="none" stroke="#000" stroke-width="1.5"/>
-                <line x1="4" y1="18" x2="16" y2="18" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-tree-railing">
-                <rect x="6" y="16" width="8" height="4" fill="none" stroke="#000" stroke-width="1.5"/>
-                <line x1="8" y1="16" x2="8" y2="20" stroke="#000" stroke-width="1.5"/>
-                <line x1="12" y1="16" x2="12" y2="20" stroke="#000" stroke-width="1.5"/>
-                <line x1="6" y1="18" x2="14" y2="18" stroke="#000" stroke-width="1.5"/>
-                <line x1="10" y1="16" x2="10" y2="4" stroke="#000" stroke-width="1.5"/>
-                <path d="M10,12 Q6,8 10,4 Q14,8 10,12" fill="none" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-frog">
-                <ellipse cx="10" cy="12" rx="4" ry="6" fill="none" stroke="#000" stroke-width="1.5"/>
-                <circle cx="8" cy="7" r="1" fill="#000"/>
-                <circle cx="12" cy="7" r="1" fill="#000"/>
-                <path d="M6,14 L3,17 M14,14 L17,17 M7,9 L4,6 M13,9 L16,6" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-square-marks">
-                <rect x="4" y="4" width="12" height="12" fill="none" stroke="#000" stroke-width="1.5"/>
-                <circle cx="7" cy="7" r="1" fill="#000"/>
-                <circle cx="13" cy="7" r="1" fill="#000"/>
-                <circle cx="7" cy="13" r="1" fill="#000"/>
-                <circle cx="13" cy="13" r="1" fill="#000"/>
-            </g>
-            <g id="sym-triple-circle">
-                <circle cx="10" cy="6" r="3" fill="none" stroke="#000" stroke-width="1.5"/>
-                <circle cx="6" cy="13" r="3" fill="none" stroke="#000" stroke-width="1.5"/>
-                <circle cx="14" cy="13" r="3" fill="none" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-star">
-                <polygon points="10,2 12,8 18,8 13,12 15,18 10,14 5,18 7,12 2,8 8,8" fill="none" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-wheel">
-                <circle cx="10" cy="10" r="8" fill="none" stroke="#000" stroke-width="1.5"/>
-                <circle cx="10" cy="10" r="2" fill="none" stroke="#000" stroke-width="1.5"/>
-                <line x1="10" y1="2" x2="10" y2="8" stroke="#000" stroke-width="1.5"/>
-                <line x1="10" y1="12" x2="10" y2="18" stroke="#000" stroke-width="1.5"/>
-                <line x1="2" y1="10" x2="8" y2="10" stroke="#000" stroke-width="1.5"/>
-                <line x1="12" y1="10" x2="18" y2="10" stroke="#000" stroke-width="1.5"/>
-                <line x1="4.3" y1="4.3" x2="8.6" y2="8.6" stroke="#000" stroke-width="1.5"/>
-                <line x1="15.7" y1="15.7" x2="11.4" y2="11.4" stroke="#000" stroke-width="1.5"/>
-                <line x1="4.3" y1="15.7" x2="8.6" y2="11.4" stroke="#000" stroke-width="1.5"/>
-                <line x1="15.7" y1="4.3" x2="11.4" y2="8.6" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-animal-figure">
-                <path d="M4,16 Q8,10 12,16 L12,20 L8,20 L8,16 Z" fill="#000"/>
-                <circle cx="10" cy="8" r="2" fill="#000"/>
-            </g>
-            <g id="sym-elephant-like">
-                <path d="M2,12 Q6,6 10,12 L14,12 L14,18 L10,18 L10,14 L6,14 L6,18 L2,18 Z" fill="#000"/>
-                <path d="M14,14 Q18,10 20,16" fill="none" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-hollow-cross">
-                 <rect x="8" y="2" width="4" height="16" fill="none" stroke="#000" stroke-width="1.5"/>
-                 <rect x="2" y="8" width="16" height="4" fill="none" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-steelyard">
-                <line x1="2" y1="10" x2="18" y2="10" stroke="#000" stroke-width="1.5"/>
-                <circle cx="10" cy="10" r="2" fill="#000"/>
-                <line x1="10" y1="12" x2="10" y2="18" stroke="#000" stroke-width="1.5"/>
-                <polygon points="8,18 12,18 10,22" fill="#000"/>
-            </g>
-            <g id="sym-bow-arrow">
-                 <path d="M4,4 Q10,10 4,16" fill="none" stroke="#000" stroke-width="1.5"/>
-                 <line x1="4" y1="10" x2="16" y2="10" stroke="#000" stroke-width="1.5"/>
-                 <polygon points="16,10 12,8 12,12" fill="#000"/>
-            </g>
-             <g id="sym-caduceus">
-                 <line x1="10" y1="2" x2="10" y2="18" stroke="#000" stroke-width="1.5"/>
-                 <path d="M6,6 Q10,10 14,6" fill="none" stroke="#000" stroke-width="1.5"/>
-                 <path d="M6,14 Q10,10 14,14" fill="none" stroke="#000" stroke-width="1.5"/>
-                 <circle cx="10" cy="2" r="1.5" fill="#000"/>
-            </g>
-            <g id="sym-hare">
-                 <ellipse cx="10" cy="12" rx="6" ry="4" fill="#000"/>
-                 <circle cx="14" cy="8" r="2" fill="#000"/>
-                 <path d="M14,6 L12,2 M15,6 L16,2" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-dog">
-                 <path d="M4,14 Q8,10 12,14 L16,12 L16,16 L12,16 L12,18 L8,18 L8,16 L4,16 Z" fill="#000"/>
-                 <circle cx="14" cy="10" r="1.5" fill="#000"/>
-            </g>
-            <g id="sym-taurus">
-                <circle cx="10" cy="14" r="4" fill="none" stroke="#000" stroke-width="1.5"/>
-                <path d="M6,10 Q10,14 14,10" fill="none" stroke="#000" stroke-width="1.5"/>
-            </g>
-            <g id="sym-crescent">
-                 <path d="M6,10 Q10,14 14,10 Q10,12 6,10" fill="#000"/>
-            </g>
-            <g id="sym-sacred-tree">
-                 <line x1="10" y1="18" x2="10" y2="4" stroke="#000" stroke-width="1.5"/>
-                 <line x1="10" y1="14" x2="6" y2="10" stroke="#000" stroke-width="1.5"/>
-                 <line x1="10" y1="14" x2="14" y2="10" stroke="#000" stroke-width="1.5"/>
-                 <line x1="10" y1="10" x2="6" y2="6" stroke="#000" stroke-width="1.5"/>
-                 <line x1="10" y1="10" x2="14" y2="6" stroke="#000" stroke-width="1.5"/>
-                 <rect x="6" y="18" width="8" height="2" fill="#000"/>
-            </g>
-            <g id="sym-composite-geom">
-                 <rect x="4" y="4" width="12" height="12" fill="none" stroke="#000" stroke-width="1.5"/>
-                 <line x1="4" y1="4" x2="16" y2="16" stroke="#000" stroke-width="1.5"/>
-                 <line x1="4" y1="16" x2="16" y2="4" stroke="#000" stroke-width="1.5"/>
-            </g>
+            <g id="sym-sun"><circle cx="10" cy="10" r="4" fill="#000"/><circle cx="10" cy="10" r="8" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="2,2"/></g>
+            <g id="sym-arrow"><circle cx="10" cy="10" r="2" fill="#000"/><path d="M10,10 L10,2 M10,10 L18,10 M10,10 L10,18 M10,10 L2,10 M10,10 L16,4 M10,10 L4,16" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-bull"><path d="M3,15 Q3,5 15,5 Q20,5 20,10 L25,10 L25,15 L20,15 L20,20 L15,20 L15,15 Z" fill="#000"/></g>
+            <g id="sym-elephant"><path d="M2,15 Q2,5 12,5 Q22,5 22,15 L26,15 L26,20 L22,20 L22,24 L18,24 L18,20 L8,20 L8,24 L4,24 Z" fill="#000"/></g>
+            <g id="sym-tree"><line x1="10" y1="20" x2="10" y2="4" stroke="#000" stroke-width="2"/><line x1="10" y1="14" x2="4" y2="8" stroke="#000" stroke-width="2"/><line x1="10" y1="10" x2="16" y2="4" stroke="#000" stroke-width="2"/><circle cx="4" cy="8" r="1.5" fill="#000"/><circle cx="16" cy="4" r="1.5" fill="#000"/></g>
+            <g id="sym-hill"><path d="M4,18 Q10,8 16,18 Q22,8 28,18" fill="none" stroke="#000" stroke-width="2"/></g>
+            <g id="sym-triangle"><polygon points="10,20 20,4 30,20" fill="none" stroke="#000" stroke-width="2"/></g>
+            <g id="sym-shield"><path d="M5,5 L25,5 Q25,25 15,30 Q5,25 5,5" fill="none" stroke="#000" stroke-width="2"/></g>
+            <g id="sym-circle"><circle cx="15" cy="15" r="10" fill="none" stroke="#000" stroke-width="2"/></g>
+            <g id="sym-terminal"><circle cx="15" cy="10" r="5" fill="none" stroke="#000" stroke-width="2"/><path d="M10,20 Q15,15 20,20" fill="none" stroke="#000" stroke-width="2"/></g>
+            <g id="sym-six-armed"><circle cx="10" cy="10" r="2" fill="#000"/><path d="M10,8 L10,2 M10,2 L12,4 M10,2 L8,4" stroke="#000" stroke-width="1.5" fill="none"/><path d="M10,12 L10,18 M10,18 L12,16 M10,18 L8,16" stroke="#000" stroke-width="1.5" fill="none"/><path d="M8,9 L3,6 M3,6 L5,5 M3,6 L3,8" stroke="#000" stroke-width="1.5" fill="none"/><path d="M12,11 L17,14 M17,14 L15,15 M17,14 L17,12" stroke="#000" stroke-width="1.5" fill="none"/><path d="M8,11 L3,14 M3,14 L3,12 M3,14 L5,15" stroke="#000" stroke-width="1.5" fill="none"/><path d="M12,9 L17,6 M17,6 L17,8 M17,6 L15,5" stroke="#000" stroke-width="1.5" fill="none"/></g>
+            <g id="sym-three-hill"><path d="M6,18 Q8,12 10,18" fill="none" stroke="#000" stroke-width="1.5"/><path d="M10,18 Q12,12 14,18" fill="none" stroke="#000" stroke-width="1.5"/><path d="M8,12 Q10,6 12,12" fill="none" stroke="#000" stroke-width="1.5"/><line x1="4" y1="18" x2="16" y2="18" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-tree-railing"><rect x="6" y="16" width="8" height="4" fill="none" stroke="#000" stroke-width="1.5"/><line x1="8" y1="16" x2="8" y2="20" stroke="#000" stroke-width="1.5"/><line x1="12" y1="16" x2="12" y2="20" stroke="#000" stroke-width="1.5"/><line x1="6" y1="18" x2="14" y2="18" stroke="#000" stroke-width="1.5"/><line x1="10" y1="16" x2="10" y2="4" stroke="#000" stroke-width="1.5"/><path d="M10,12 Q6,8 10,4 Q14,8 10,12" fill="none" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-frog"><ellipse cx="10" cy="12" rx="4" ry="6" fill="none" stroke="#000" stroke-width="1.5"/><circle cx="8" cy="7" r="1" fill="#000"/><circle cx="12" cy="7" r="1" fill="#000"/><path d="M6,14 L3,17 M14,14 L17,17 M7,9 L4,6 M13,9 L16,6" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-square-marks"><rect x="4" y="4" width="12" height="12" fill="none" stroke="#000" stroke-width="1.5"/><circle cx="7" cy="7" r="1" fill="#000"/><circle cx="13" cy="7" r="1" fill="#000"/><circle cx="7" cy="13" r="1" fill="#000"/><circle cx="13" cy="13" r="1" fill="#000"/></g>
+            <g id="sym-triple-circle"><circle cx="10" cy="6" r="3" fill="none" stroke="#000" stroke-width="1.5"/><circle cx="6" cy="13" r="3" fill="none" stroke="#000" stroke-width="1.5"/><circle cx="14" cy="13" r="3" fill="none" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-star"><polygon points="10,2 12,8 18,8 13,12 15,18 10,14 5,18 7,12 2,8 8,8" fill="none" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-wheel"><circle cx="10" cy="10" r="8" fill="none" stroke="#000" stroke-width="1.5"/><circle cx="10" cy="10" r="2" fill="none" stroke="#000" stroke-width="1.5"/><line x1="10" y1="2" x2="10" y2="8" stroke="#000" stroke-width="1.5"/><line x1="10" y1="12" x2="10" y2="18" stroke="#000" stroke-width="1.5"/><line x1="2" y1="10" x2="8" y2="10" stroke="#000" stroke-width="1.5"/><line x1="12" y1="10" x2="18" y2="10" stroke="#000" stroke-width="1.5"/><line x1="4.3" y1="4.3" x2="8.6" y2="8.6" stroke="#000" stroke-width="1.5"/><line x1="15.7" y1="15.7" x2="11.4" y2="11.4" stroke="#000" stroke-width="1.5"/><line x1="4.3" y1="15.7" x2="8.6" y2="11.4" stroke="#000" stroke-width="1.5"/><line x1="15.7" y1="4.3" x2="11.4" y2="8.6" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-animal-figure"><path d="M4,16 Q8,10 12,16 L12,20 L8,20 L8,16 Z" fill="#000"/><circle cx="10" cy="8" r="2" fill="#000"/></g>
+            <g id="sym-elephant-like"><path d="M2,12 Q6,6 10,12 L14,12 L14,18 L10,18 L10,14 L6,14 L6,18 L2,18 Z" fill="#000"/><path d="M14,14 Q18,10 20,16" fill="none" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-hollow-cross"><rect x="8" y="2" width="4" height="16" fill="none" stroke="#000" stroke-width="1.5"/><rect x="2" y="8" width="16" height="4" fill="none" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-steelyard"><line x1="2" y1="10" x2="18" y2="10" stroke="#000" stroke-width="1.5"/><circle cx="10" cy="10" r="2" fill="#000"/><line x1="10" y1="12" x2="10" y2="18" stroke="#000" stroke-width="1.5"/><polygon points="8,18 12,18 10,22" fill="#000"/></g>
+            <g id="sym-bow-arrow"><path d="M4,4 Q10,10 4,16" fill="none" stroke="#000" stroke-width="1.5"/><line x1="4" y1="10" x2="16" y2="10" stroke="#000" stroke-width="1.5"/><polygon points="16,10 12,8 12,12" fill="#000"/></g>
+            <g id="sym-caduceus"><line x1="10" y1="2" x2="10" y2="18" stroke="#000" stroke-width="1.5"/><path d="M6,6 Q10,10 14,6 M6,14 Q10,10 14,14" fill="none" stroke="#000" stroke-width="1.5"/><circle cx="10" cy="2" r="1.5" fill="#000"/></g>
+            <g id="sym-hare"><ellipse cx="10" cy="12" rx="6" ry="4" fill="#000"/><circle cx="14" cy="8" r="2" fill="#000"/><path d="M14,6 L12,2 M15,6 L16,2" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-dog"><path d="M4,14 Q8,10 12,14 L16,12 L16,16 L12,16 L12,18 L8,18 L8,16 L4,16 Z" fill="#000"/><circle cx="14" cy="10" r="1.5" fill="#000"/></g>
+            <g id="sym-taurus"><circle cx="10" cy="14" r="4" fill="none" stroke="#000" stroke-width="1.5"/><path d="M6,10 Q10,14 14,10" fill="none" stroke="#000" stroke-width="1.5"/></g>
+            <g id="sym-crescent"><path d="M6,10 Q10,14 14,10 Q10,12 6,10" fill="#000"/></g>
+            <g id="sym-sacred-tree"><line x1="10" y1="18" x2="10" y2="4" stroke="#000" stroke-width="1.5"/><line x1="10" y1="14" x2="6" y2="10" stroke="#000" stroke-width="1.5"/><line x1="10" y1="14" x2="14" y2="10" stroke="#000" stroke-width="1.5"/><line x1="10" y1="10" x2="6" y2="6" stroke="#000" stroke-width="1.5"/><line x1="10" y1="10" x2="14" y2="6" stroke="#000" stroke-width="1.5"/><rect x="6" y="18" width="8" height="2" fill="#000"/></g>
+            <g id="sym-composite-geom"><rect x="4" y="4" width="12" height="12" fill="none" stroke="#000" stroke-width="1.5"/><line x1="4" y1="4" x2="16" y2="16" stroke="#000" stroke-width="1.5"/><line x1="4" y1="16" x2="16" y2="4" stroke="#000" stroke-width="1.5"/></g>
         </defs>
     </svg>
 
@@ -443,28 +323,27 @@
                                     हमने sunken pool को घेरने वाले colonnaded veranda को फिर से बनाया है, जहाँ संभवतः अनुष्ठान (rituals) से पहले कपड़े बदले जाते थे। पूल के अस्तर में जो डार्क परत आप देख रहे हैं, वह प्राकृतिक bitumen (तारकोल) का प्रतिनिधित्व करती है जिसका उपयोग इसे पूरी तरह से वॉटरटाइट (watertight) बनाने के लिए किया गया था—यह दुनिया का पहला सार्वजनिक जल टैंक है, जो रोमनों के स्नानागारों से भी हज़ारों साल पुराना है।
                                 </p>
                                 
-                                <div class="flex gap-2 mb-2 mt-2"><span class="px-2 py-0.5 border text-[9px] font-bold uppercase tracking-wider bg-[var(--evidence-bg)] border-[var(--evidence-border)] text-[var(--evidence-text)] rounded-sm">Established Evidence</span></div>
-                                
-                                <!-- Museum Artifact Interpretation Panel -->
-                                <div class="artifact-panel flex gap-3 p-3 bg-slate-800/80 border border-slate-600 rounded mt-3">
-                                    <div class="w-16 h-16 bg-slate-900 rounded flex items-center justify-center border border-slate-700 shadow-inner flex-shrink-0"><i class="ph-fill ph-squares-four text-3xl text-terracotta-500"></i></div>
-                                    <div>
-                                        <h6 class="font-bold text-white text-xs mb-1">Standardized Baked Brick</h6>
-                                        <p class="text-[10px] text-slate-400 leading-tight">Found universally across the IVC domain. Dimension ratio perfectly 1:2:4, essential for advanced masonry bonding.</p>
-                                    </div>
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">Brick basin, bitumen layer, surrounding room foundations.</span></li>
+                                        <li class="flex items-start gap-2"><span class="text-blue-400 w-16 flex-shrink-0">Inferred:</span> <span class="text-slate-300">Colonnaded veranda pillars (based on brick bases).</span></li>
+                                        <li class="flex items-start gap-2"><span class="text-purple-400 w-16 flex-shrink-0">Reconstructed:</span> <span class="text-slate-300">Wooden superstructure, roof layout, exact water depth.</span></li>
+                                    </ul>
                                 </div>
 
-                                <!-- Physics Textbook Style Worked Example -->
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-terracotta-500 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-terracotta-400 font-bold mb-3 flex items-center gap-2"><i class="ph-bold ph-calculator"></i> Worked Example: Capacity & Logistics</h5>
-                                    <div class="grid grid-cols-[70px_1fr] gap-y-2 gap-x-2">
-                                        <div class="font-bold text-slate-500">Given:</div><div class="text-slate-200">Bath dimensions \( L = 11.88\text{m}, W = 7.01\text{m}, D = 2.43\text{m} \)</div>
-                                        <div class="font-bold text-slate-500">Formula:</div><div class="text-slate-200">Volume \( V = L \times W \times D \)</div>
-                                        <div class="font-bold text-slate-500">Calc:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">\( V = 202.3 \text{ m}^3 \) = 202,300 Liters</div>
-                                        <div class="font-bold text-slate-500">Interpret:</div><div class="text-terracotta-300">Filling a 200,000L tank manually from adjacent wells required immense logistical coordination, indicating centralized civic authority.</div>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Bath dimensions \( L = 11.88\text{m}, W = 7.01\text{m}, D = 2.43\text{m} \)</div>
+                                        <div class="font-bold text-slate-500">Assumptions:</div><div class="text-slate-200">Water density \( \rho = 1000\text{ kg/m}^3 \), uniform wall load.</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 bg-black/30 p-1 rounded font-mono inline-block">Volume \( V = L \times W \times D \), Pressure \( P = \rho g h \)</div>
+                                        <div class="font-bold text-slate-500">Calculation:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">\( V = 202.3 \text{ m}^3 \) = 202,300 Liters, \( P_{max} \approx 23.8 \text{ kPa} \)</div>
+                                        <div class="font-bold text-slate-500">Sensitivity:</div><div class="text-slate-200">If water level drops 1m, lateral pressure decreases by ~41%.</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-terracotta-300">Filling a 200,000L tank manually from adjacent wells required immense logistical coordination, indicating centralized civic authority. Every structure is built using a strict 1:2:4 brick ratio.</div>
+                                        <div class="font-bold text-slate-500">Limitations:</div><div class="text-slate-200">Ignores dynamic sloshing forces and soil counter-pressure.</div>
                                     </div>
                                 </div>
-
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-terracotta-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
                                 Read More <i class="ph-bold ph-caret-down"></i>
@@ -494,17 +373,18 @@
                                     प्राचीन मिस्र (Egypt) या मेसोपोटामिया (Mesopotamia) के विपरीत, पुरातत्वविदों को सिंधु घाटी में कभी भी कोई निश्चित शाही महल (royal palace), विशाल सैन्य छावनी या भगवान-राजा (god-king) का भव्य मंदिर नहीं मिला है। इसके बजाय, इस हॉल जैसी स्मारकीय वास्तुकला एक सांप्रदायिक (communal), लोकतांत्रिक या कुलीन (oligarchic) शासन प्रणाली का सुझाव देती है, जहाँ शायद शहर के बड़े व्यापारी और विद्वान मिलकर निर्णय लेते थे।
                                 </p>
                                 
-                                <div class="flex gap-2 mb-2 mt-2"><span class="px-2 py-0.5 border text-[9px] font-bold uppercase tracking-wider bg-[var(--inference-bg)] border-[var(--inference-border)] text-[var(--inference-text)] rounded-sm">Strong Inference</span></div>
-                                
-                                <div class="worked-example bg-slate-900/90 border-l-4 border-yellow-500 p-4 rounded mt-2 font-sans text-xs">
-                                    <h5 class="text-yellow-400 font-bold mb-2">Population Assembly Modeling</h5>
-                                    <p class="text-slate-300 mb-2">Using modern crowd density metrics (e.g., Fruin's Level of Service), we estimate capacity.</p>
-                                    <div class="text-slate-200 font-mono bg-black/30 p-2 rounded text-[10px]">
-                                        Area ≈ 750 m²<br>
-                                        Comfortable seating: 1.5 m² per person<br>
-                                        Assembly Capacity: \( N = \frac{750}{1.5} = 500 \) individuals.
-                                    </div>
-                                    <p class="text-yellow-300 mt-2 text-[10px]">Conclusion: The hall could host a ruling council or assembly of 500 elite citizens, aligning with an oligarchic city-state model rather than an autocratic monarchy.</p>
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">20 squarish brick pillar bases arranged in rows.</span></li>
+                                        <li class="flex items-start gap-2"><span class="text-blue-400 w-16 flex-shrink-0">Inferred:</span> <span class="text-slate-300">Wooden pillars matching the bases, massive flat roof.</span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>Alternative View:</strong> Some early archaeologists suggested this was a marketplace, but the lack of commercial debris contradicts this.</p>
+                                    <p class="text-[10px] text-slate-300"><strong>Uncertainty:</strong> The exact seating arrangement and the specific governance model (republic vs. oligarchy) remains debated.</p>
                                 </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-yellow-500 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
@@ -534,16 +414,29 @@
                                 <p>
                                     इस स्वदेशी passive ventilation system ने सिंधु नदी बेसिन की आर्द्र जलवायु (humid climate) में शहर के विशाल अनाज भंडार को सड़ने और फफूंद (fungus) से बचाया। उस युग में सोना नहीं, बल्कि अतिरिक्त अनाज (grain surplus) ही सच्ची मुद्रा (currency) थी, और यही उनके पूरे व्यापारिक साम्राज्य का आधार था।
                                 </p>
-                                <div class="flex gap-2 mb-2 mt-2"><span class="px-2 py-0.5 border text-[9px] font-bold uppercase tracking-wider bg-[var(--evidence-bg)] border-[var(--evidence-border)] text-[var(--evidence-text)] rounded-sm">Established Evidence</span></div>
+
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-blue-400 w-16 flex-shrink-0">Strong Inference:</span> <span class="text-slate-300">The presence of narrow air ducts points directly to grain storage, though no macro-botanical remains were found inside.</span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>Alternative View:</strong> J.M. Kenoyer has proposed this might be a "Great Hall" or state treasury rather than a granary, given the lack of grain seeds.</p>
+                                </div>
 
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-amber-600 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-amber-500 font-bold mb-3 flex items-center gap-2"><i class="ph-bold ph-calculator"></i> Worked Example: Caloric Logistics</h5>
-                                    <div class="grid grid-cols-[70px_1fr] gap-y-2 gap-x-2 text-[10px]">
-                                        <div class="font-bold text-slate-500">Given:</div><div class="text-slate-200">Granary base area \( \approx 800\text{m}^2 \). Usable storage height \( \approx 3\text{m} \).</div>
-                                        <div class="font-bold text-slate-500">Calc:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">Volume \( \approx 2400 \text{ m}^3 \)</div>
-                                        <div class="font-bold text-slate-500">Data:</div><div class="text-slate-200">Wheat density \( \approx 790 \text{ kg/m}^3 \). Caloric value \( \approx 3400 \text{ kcal/kg} \).</div>
-                                        <div class="font-bold text-slate-500">Result:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">Total Energy \( \approx 6.4 \times 10^9 \text{ kcal} \)</div>
-                                        <div class="font-bold text-slate-500">Interpret:</div><div class="text-amber-300">Assuming 2500 kcal/person/day, a full granary could feed 7,000 citizens for a full year during a drought, securing the state's economic stability.</div>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Granary base area \( \approx 800\text{m}^2 \). Usable storage height \( \approx 3\text{m} \).</div>
+                                        <div class="font-bold text-slate-500">Assumptions:</div><div class="text-slate-200">Wheat density \( \approx 790 \text{ kg/m}^3 \). Caloric value \( \approx 3400 \text{ kcal/kg} \). 100% packing efficiency.</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">\( E = (Area \times Height) \times \rho \times C_{kcal} \)</div>
+                                        <div class="font-bold text-slate-500">Calculation:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">Total Energy \( \approx 6.4 \times 10^9 \text{ kcal} \)</div>
+                                        <div class="font-bold text-slate-500">Sensitivity:</div><div class="text-slate-200">If packing efficiency is only 70% due to aisles, total calories drop to \( 4.4 \times 10^9 \).</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-amber-300">Assuming 2500 kcal/person/day, a full granary could feed over 7,000 citizens for a full year during a drought, securing the state's economic stability.</div>
+                                        <div class="font-bold text-slate-500">Limitations:</div><div class="text-slate-200">Ignores caloric decay and rodent loss over time.</div>
                                     </div>
                                 </div>
                             </div>
@@ -572,23 +465,23 @@
                                     आप पकी हुई ईंटों के विशाल bastions (बुर्ज) देखेंगे जो किले की दीवारों से बाहर निकले हुए हैं। पहली नज़र में यह एक सैन्य किले (military fort) की तरह दिखता है।
                                 </p>
                                 <p>
-                                    लेकिन मानव सेनाओं से बचाव करने के बजाय, आधुनिक पुरातत्व बताता है कि इन विशाल किलेबंदी (fortifications) को मुख्य रूप से ruling elite के क्षेत्र को सिंधु नदी की विनाशकारी और अप्रत्याशित बाढ़ (unpredictable floods) से बचाने के लिए डिज़ाइन किया गया था।
+                                    लेकिन मानव सेनाओं से बचाव करने के बजाय, आधुनिक पुरातत्व बताता है कि इन विशाल किलेबंदी (fortifications) को मुख्य रूप से ruling elite के क्षेत्र को सिंधु नदी की विनाशकारी और अप्रत्याशित बाढ़ (unpredictable floods) से बचाने के लिए डिज़ाइन किया गया था। इसके अतिरिक्त, शहर के प्रवेश द्वार (gateway) पर स्थित होने के कारण, यह व्यापारिक सामानों के प्रवाह को नियंत्रित करने, कर (taxes) वसूलने और बाहरी लोगों की निगरानी करने के लिए एक स्मारकीय चेकपॉइंट के रूप में भी काम करता था।
                                 </p>
-                                <div class="flex gap-2 mb-2 mt-2">
-                                    <span class="px-2 py-0.5 border text-[9px] font-bold uppercase tracking-wider bg-[var(--speculation-bg)] border-[var(--speculation-border)] text-[var(--speculation-text)] rounded-sm">Scholarly Speculation</span>
-                                </div>
                                 
-                                <div class="worked-example bg-slate-900/90 border-l-4 border-stone-500 p-4 rounded mt-4 font-sans text-xs">
-                                    <h5 class="text-stone-400 font-bold mb-2">Uncertainty Analysis: Flood Returns</h5>
-                                    <p class="text-slate-300 mb-2">Did they build for the 100-year flood or 500-year flood?</p>
-                                    <div class="text-slate-200 font-mono bg-black/30 p-2 rounded text-[10px]">
-                                        Probability of flood exceeding bastion height \( H \):<br>
-                                        \( P(h > H) = 1 - e^{-e^{-(H-\mu)/\sigma}} \) (Gumbel Dist.)<br>
-                                        Return Period \( T = 1 / P(h > H) \)
-                                    </div>
-                                    <p class="text-stone-300 mt-2 text-[10px]">The immense 15m elevation of the citadel mound suggests engineering for an extreme tail-risk event, implying sophisticated historical record-keeping of river levels across generations.</p>
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>Alternative View:</strong> Mortimer Wheeler interpreted these as military defenses against Aryan invaders. This view is now largely obsolete in modern archaeology.</p>
                                 </div>
 
+                                <div class="worked-example bg-slate-900/90 border-l-4 border-stone-500 p-4 rounded mt-4 font-sans text-xs">
+                                    <h5 class="text-stone-400 font-bold mb-2">Uncertainty Analysis: Flood Returns</h5>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Bastion Height \( H \approx 15\text{m} \).</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">Probability of flood exceeding \( H \): \( P(h > H) = 1 - e^{-e^{-(H-\mu)/\sigma}} \) (Gumbel Distribution)</div>
+                                        <div class="font-bold text-slate-500">Sensitivity:</div><div class="text-slate-200">If historical river volatility \( \sigma \) increases by 20%, the required safety margin \( H \) increases dramatically.</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-stone-300">The immense 15m elevation suggests engineering for an extreme tail-risk event (e.g., a "500-year flood"), implying sophisticated historical record-keeping of river levels across multiple generations.</div>
+                                    </div>
+                                </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-stone-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
                                 Read More <i class="ph-bold ph-caret-down"></i>
@@ -618,26 +511,24 @@
                                     यह शहर प्राचीन विश्व का एक औद्योगिक पावरहाउस (industrial powerhouse) था। यहाँ, कुशल कारीगरों ने विशेष भट्टियों में carnelian beads को पकाया, यूनिकॉर्न रूपांकनों (unicorn motifs) के साथ उत्तम steatite seals उकेरी, और मदार की जड़ (madder root) का उपयोग करके सूती वस्त्रों को चमकीले रंगों में रंगा।
                                 </p>
                                 
-                                <div class="flex gap-2 mb-2 mt-2"><span class="px-2 py-0.5 border text-[9px] font-bold uppercase tracking-wider bg-[var(--evidence-bg)] border-[var(--evidence-border)] text-[var(--evidence-text)] rounded-sm">Established Evidence</span></div>
-
-                                <!-- Artifact Panel -->
-                                <div class="artifact-panel flex gap-3 p-3 bg-slate-800/80 border border-slate-600 rounded mt-3">
-                                    <div class="w-16 h-16 bg-slate-900 rounded flex items-center justify-center border border-slate-700 shadow-inner flex-shrink-0"><i class="ph-fill ph-gem text-3xl text-red-500"></i></div>
-                                    <div>
-                                        <h6 class="font-bold text-white text-xs mb-1">Carnelian Bead (Etched)</h6>
-                                        <p class="text-[10px] text-slate-400 leading-tight">Exported extensively to Mesopotamia. Proof of complex inter-regional trade networks and advanced thermocycling pyrotechnology.</p>
-                                    </div>
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">Dense clusters of debitage (waste material from bead making) and dye vats.</span></li>
+                                        <li class="flex items-start gap-2"><span class="text-blue-400 w-16 flex-shrink-0">Inferred:</span> <span class="text-slate-300">This area functioned as an active commercial and manufacturing bazaar.</span></li>
+                                    </ul>
                                 </div>
 
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-orange-500 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-orange-400 font-bold mb-2">Logistics Estimate: Trade Networks</h5>
-                                    <p class="text-slate-300 mb-2">Transporting goods from Mohenjo-daro to Ur (Mesopotamia).</p>
-                                    <div class="text-slate-200 font-mono bg-black/30 p-2 rounded text-[10px]">
-                                        Distance \( \approx 2500 \text{ km} \) (Maritime route via Dilmun)<br>
-                                        Average sailing speed \( \approx 3 \text{ knots} \)<br>
-                                        Estimated transit time \( \approx 20-30 \text{ days} \)
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Indus beads found in Royal Tombs of Ur (Mesopotamia). Distance \( \approx 2500 \text{ km} \) via Dilmun.</div>
+                                        <div class="font-bold text-slate-500">Assumptions:</div><div class="text-slate-200">Average sailing speed \( \approx 3 \text{ knots} \).</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">\( T_{transit} = \frac{D}{v_{ship}} + \sum t_{delay} \)</div>
+                                        <div class="font-bold text-slate-500">Calculation:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">Estimated transit time \( \approx 30 \text{ days} \)</div>
+                                        <div class="font-bold text-slate-500">Sensitivity:</div><div class="text-slate-200">Monsoon wind variations could alter transit times by \( \pm 10\text{ days} \).</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-orange-300">Sustaining such trade networks required standardized weights, sophisticated navigational astronomy, and reliable supply chains—laying the groundwork for globalized economics.</div>
                                     </div>
-                                    <p class="text-orange-300 mt-2 text-[10px]">This required standardized weights, reliable supply chains, and sophisticated navigational astronomy, laying the groundwork for a standardized currency system centuries later.</p>
                                 </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-orange-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
@@ -668,7 +559,12 @@
                                     हड़प्पावासी अपनी गोपनीयता (privacy) को बहुत महत्व देते थे; इसलिए उनके घरों में मुख्य सड़क की ओर खुलने वाली खिड़कियां शायद ही कभी होती थीं। मुख्य द्वार हमेशा छोटी गलियों में खुलते थे। 
                                 </p>
                                 
-                                <div class="flex gap-2 mb-2 mt-2"><span class="px-2 py-0.5 border text-[9px] font-bold uppercase tracking-wider bg-[var(--inference-bg)] border-[var(--inference-border)] text-[var(--inference-text)] rounded-sm">Strong Inference</span></div>
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">Street layouts and subterranean drains perfectly mapped across the Lower Town.</span></li>
+                                    </ul>
+                                </div>
 
                                 <!-- Interactive Simulation -->
                                 <div class="mt-4 bg-slate-900/90 border border-slate-700 p-4 rounded-lg pointer-events-auto">
@@ -685,10 +581,12 @@
 
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-teal-500 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-teal-400 font-bold mb-2">Worked Example: Manning's Equation</h5>
-                                    <div class="grid grid-cols-[70px_1fr] gap-y-2 gap-x-2 text-[10px]">
-                                        <div class="font-bold text-slate-500">Given:</div><div class="text-slate-200">Slope \( S \), Hyd. Radius \( R = 0.2\text{m} \), Roughness \( n = 0.013 \)</div>
-                                        <div class="font-bold text-slate-500">Formula:</div><div class="text-slate-200 bg-black/30 p-1 rounded font-mono inline-block">\( V = \frac{1}{n} R^{2/3} S^{1/2} \)</div>
-                                        <div class="font-bold text-slate-500">Interpret:</div><div class="text-teal-300">Harappan engineers maintained slopes \( >0.01 \) to ensure \( V > 0.8 \text{ m/s} \), preventing solid waste deposition and blockage.</div>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Brick drains with consistent slopes.</div>
+                                        <div class="font-bold text-slate-500">Assumptions:</div><div class="text-slate-200">Hydraulic Radius \( R = 0.2\text{m} \), Roughness \( n = 0.013 \) (typical for brick).</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 bg-black/30 p-1 rounded font-mono inline-block">\( V = \frac{1}{n} R^{2/3} S^{1/2} \)</div>
+                                        <div class="font-bold text-slate-500">Sensitivity:</div><div class="text-slate-200">If sediment builds up, roughness \( n \) increases, drastically lowering velocity \( V \).</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-teal-300">Engineers actively managed the slope \( S \) over kilometers to ensure \( V > 0.8 \text{ m/s} \), achieving self-cleansing flow and preventing urban disease.</div>
                                     </div>
                                 </div>
                             </div>
@@ -710,24 +608,35 @@
                         <h2 class="font-serif text-2xl font-bold text-white shadow-sm mb-3">Celestial Geometry</h2>
                         <div class="text-slate-300 font-sans text-sm leading-relaxed">
                             <p class="drop-cap">
-                                ऊपर से इस ग्रिड को देखें। सिंधु घाटी के शहरों का संरेखण यादृच्छिक (random) नहीं था। 
+                                ऊपर से इस ग्रिड को देखें (Look at this grid from above). सिंधु घाटी के शहरों का संरेखण (alignment) यादृच्छिक (random) नहीं था। 
                             </p>
                             <div class="expandable-content hidden mt-3 space-y-3">
                                 <p>
-                                    मुख्य सड़कों को <strong>cardinal directions</strong> (उत्तर, दक्षिण, पूर्व, पश्चिम) के अनुसार सटीक रूप से संरेखित किया गया था। हड़प्पा के सर्वेक्षकों ने <strong>gnomon (शंकु)</strong> और छाया मापन (shadow measurements) का उपयोग करके ट्रू नॉर्थ (True North) का पता लगाया। 
+                                    मुख्य सड़कों को <strong>cardinal directions</strong> (उत्तर, दक्षिण, पूर्व, पश्चिम) के अनुसार सटीक रूप से संरेखित किया गया था। हड़प्पा के सर्वेक्षकों (surveyors) ने <strong>gnomon (छाया छड़ी)</strong> का उपयोग करके ट्रू नॉर्थ (True North) का पता लगाया। 
                                 </p>
+                                <p>
+                                    यह ज्यामिति (geometry), खगोल विज्ञान (astronomy) और नगर नियोजन (city planning) का एक आदर्श मिश्रण था। उन्होंने तारों और सूर्य की परिक्रमा को अपने शहरी जीवन का आधार बनाया।
+                                </p>
+                                
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-blue-400 w-16 flex-shrink-0">Inferred:</span> <span class="text-slate-300">The use of shadow-casting sticks (gnomons) to derive perfect astronomical alignments across the 1-million sq km empire.</span></li>
+                                    </ul>
+                                </div>
+
                                 <div class="mt-4 bg-slate-900/80 p-4 rounded-xl border border-slate-700 font-mono text-xs overflow-x-auto text-slate-200">
                                     <div class="bg-amber-500/20 text-amber-400 px-2 py-1 rounded text-[10px] font-bold mb-3 inline-flex items-center gap-1"><i class="ph-fill ph-warning"></i> HISTORICAL CONTEXT</div>
                                     <p class="text-slate-300 text-xs mb-3 font-sans leading-relaxed">प्राचीन हड़प्पावासियों के पास आधुनिक त्रिकोणमिति (Sin/Cos) का ज्ञान नहीं था; यह ज्ञान सदियों बाद <em>सूर्य सिद्धांत</em> और आर्यभट के काल में विकसित हुआ। हड़प्पावासी विशुद्ध रूप से <strong>ज्यामितीय (geometric)</strong> और <strong>व्यावहारिक छाया-मापन</strong> तकनीकों का उपयोग करते थे।<br><br>आधुनिक पुरातत्वविद उनके इन सटीक संरेखणों को समझने और सिद्ध करने के लिए नीचे दिए गए <strong>आधुनिक सौर अज़ीमुथ (Solar Azimuth) फॉर्मूले</strong> का उपयोग करते हैं:</p>
                                     
                                     <div class="worked-example bg-slate-800/90 border-l-4 border-indigo-500 p-3 rounded mt-3 font-sans text-xs">
-                                        <div class="grid grid-cols-[60px_1fr] gap-y-2 gap-x-2 text-[10px]">
-                                            <div class="font-bold text-slate-500">Given:</div><div class="text-slate-200">Mohenjo-daro Latitude \( \phi = 27.3^\circ \text{N} \)</div>
-                                            <div class="font-bold text-slate-500">Formula:</div>
+                                        <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                            <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Streets aligned within 1-2 degrees of true North.</div>
+                                            <div class="font-bold text-slate-500">Model:</div>
                                             <div class="text-slate-200 bg-black/50 p-2 rounded text-center text-sm w-full">
                                                 $$\cos(A) = \frac{\sin(\delta) - \sin(\phi)\sin(a)}{\cos(\phi)\cos(a)}$$
                                             </div>
-                                            <div class="font-bold text-slate-500">Interpret:</div><div class="text-indigo-300">By observing shadow tips over a day, Harappans empirically solved this geometry to align major streets within 1-2 degrees of true North.</div>
+                                            <div class="font-bold text-slate-500">Sensitivity:</div><div class="text-slate-200">Atmospheric refraction causes an error of \(\approx 0.5^\circ\), matching archaeological error margins perfectly.</div>
                                         </div>
                                     </div>
                                 </div>
@@ -760,17 +669,25 @@
                                     हड़प्पावासियों ने अभी तक सच्चे रोमन कीस्टोन आर्च (Roman keystone arch) की खोज नहीं की थी, जो दबाव को एक केंद्रीय पत्थर पर डालता है। इसके बजाय, उनके इंजीनियरों ने ईंट की क्रमिक परतों को थोड़ा-थोड़ा अंदर की ओर तब तक बढ़ाया जब तक कि वे शीर्ष पर नहीं मिल गए। 
                                 </p>
                                 
-                                <div class="flex gap-2 mb-2 mt-2"><span class="px-2 py-0.5 border text-[9px] font-bold uppercase tracking-wider bg-[var(--evidence-bg)] border-[var(--evidence-border)] text-[var(--evidence-text)] rounded-sm">Established Evidence</span></div>
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">Intact subterranean drains showcasing this exact corbelling technique across the city.</span></li>
+                                    </ul>
+                                </div>
 
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-indigo-500 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-indigo-400 font-bold mb-2">Structural Load Vectors</h5>
                                     <p class="text-slate-300 mb-2 text-[10px]">A corbelled arch works by shifting the center of gravity of each subsequent brick.</p>
-                                    <div class="text-slate-200 font-mono bg-black/30 p-2 rounded text-[10px]">
-                                        Overhang distance \( x \)<br>
-                                        Brick length \( L \)<br>
-                                        Stability Condition: \( \sum x_i < \frac{L}{2} \)
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Model:</div>
+                                        <div class="text-slate-200 font-mono bg-black/30 p-2 rounded text-[10px]">
+                                            Stability Condition: \( \sum x_i < \frac{L}{2} \)<br>
+                                            (where \( x \) is overhang, \( L \) is brick length)
+                                        </div>
+                                        <div class="font-bold text-slate-500">Sensitivity:</div><div class="text-slate-200">Highly sensitive to mortar shear strength. Gypsum mortar provided the necessary rigidity.</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-indigo-300">This geometry directed vertical compressive forces downwards through the walls, preventing collapse under heavy ox-cart street traffic.</div>
                                     </div>
-                                    <p class="text-indigo-300 mt-2 text-[10px]">This geometry directed vertical compressive forces downwards through the walls, preventing collapse under street traffic.</p>
                                 </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-indigo-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
@@ -801,13 +718,19 @@
                                     गंदे पानी को दीवार के माध्यम से इन सटीक रूप से पकाए गए terracotta chutes में डाला जाता था। यह पाइप गंदे पानी को सीधे नीचे ढकी हुई सड़क की नालियों (street drains) में सुरक्षित रूप से बहा देता था। 
                                 </p>
                                 
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>How do we know?</strong> Micro-analysis of residue inside pipes confirms human waste, disproving earlier theories that these were merely ventilation chutes or rain gutters.</p>
+                                </div>
+
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-orange-500 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-orange-400 font-bold mb-2">Hydraulic Head Calculation</h5>
-                                    <div class="grid grid-cols-[70px_1fr] gap-y-2 gap-x-2 text-[10px]">
-                                        <div class="font-bold text-slate-500">Given:</div><div class="text-slate-200">Height \( h = 4\text{m} \), Gravity \( g = 9.8\text{m/s}^2 \)</div>
-                                        <div class="font-bold text-slate-500">Formula:</div><div class="text-slate-200 bg-black/30 p-1 rounded font-mono inline-block">Bernoulli: \( v = \sqrt{2gh} \)</div>
-                                        <div class="font-bold text-slate-500">Result:</div><div class="text-slate-200 font-mono">Velocity at bottom \( \approx 8.8 \text{ m/s} \)</div>
-                                        <div class="font-bold text-slate-500">Interpret:</div><div class="text-orange-300">The high exit velocity required deep brick sumps to dissipate kinetic energy before water entered the main street drains, a detail confirmed by archaeology.</div>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Drop Height \( h = 4\text{m} \).</div>
+                                        <div class="font-bold text-slate-500">Assumptions:</div><div class="text-slate-200">Gravity \( g = 9.8\text{m/s}^2 \), ignoring minor friction losses in smooth terracotta.</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 bg-black/30 p-1 rounded font-mono inline-block">Bernoulli: \( v = \sqrt{2gh} \)</div>
+                                        <div class="font-bold text-slate-500">Calculation:</div><div class="text-slate-200 font-mono">Velocity at bottom \( \approx 8.8 \text{ m/s} \)</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-orange-300">This high exit velocity explains why archaeologists find deep, reinforced brick sumps at the base of pipes—engineered specifically to dissipate kinetic energy before it destroyed the street drains.</div>
                                     </div>
                                 </div>
                             </div>
@@ -839,12 +762,21 @@
                                     ऐसे समय में जब अन्य समकालीन सभ्यताएं (जैसे मेसोपोटामिया) पानी लाने के लिए केंद्रीय नदियों या सांप्रदायिक तालाबों पर निर्भर थीं, हड़प्पावासियों ने निजी स्वच्छता और पानी की पहुंच का एक ऐसा स्तर हासिल किया जो हजारों वर्षों तक फिर से नहीं देखा जा सकेगा। 
                                 </p>
                                 
-                                <div class="flex gap-2 mb-2 mt-2"><span class="px-2 py-0.5 border text-[9px] font-bold uppercase tracking-wider bg-[var(--evidence-bg)] border-[var(--evidence-border)] text-[var(--evidence-text)] rounded-sm">Established Evidence</span></div>
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">Hundreds of intact brick well shafts found across the city.</span></li>
+                                    </ul>
+                                </div>
 
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-teal-500 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-teal-400 font-bold mb-2">Trapezoidal Brick Geometry</h5>
-                                    <p class="text-slate-300 mb-2 text-[10px]">Why didn't the wells collapse under inward soil pressure?</p>
-                                    <p class="text-teal-300 text-[10px]">Harappans fired specialized wedge-shaped (trapezoidal) bricks. When arranged in a ring, the wider outer edges distributed radial soil pressure \( P \) perfectly into compressive stress between the bricks, creating an indestructible cylinder without internal support.</p>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Problem:</div><div class="text-slate-200">Why didn't the wells collapse inward under massive soil pressure?</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200">Hoop Stress Optimization.</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-teal-300">Harappans invented and mass-produced specialized wedge-shaped (trapezoidal) bricks. When arranged in a ring, the wider outer edges distributed inward radial soil pressure \( P \) perfectly into structural compressive stress, locking the well together without any internal support.</div>
+                                        <div class="font-bold text-slate-500">Limitations:</div><div class="text-slate-200">Vulnerable to soil liquefaction during major earthquakes.</div>
+                                    </div>
                                 </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-teal-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
@@ -871,12 +803,21 @@
                                 <p>
                                     हड़प्पावासी अत्यधिक कुशल धातुविज्ञानी (metallurgists) और शिल्पकार थे। अपने प्रसिद्ध लंबे carnelian beads बनाने के लिए, उन्हें इन गोलाकार ईंट की भट्टियों के भीतर सील किए गए terra-cotta कंटेनरों में कच्चे पत्थरों को कई दिनों तक 850°C से अधिक गर्म करना पड़ता था।
                                 </p>
+                                
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">Circular vitrified brick kiln bases.</span></li>
+                                    </ul>
+                                </div>
+
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-red-600 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-red-400 font-bold mb-2">Thermodynamics Worked Example</h5>
-                                    <div class="grid grid-cols-[70px_1fr] gap-y-2 gap-x-2 text-[10px]">
-                                        <div class="font-bold text-slate-500">Given:</div><div class="text-slate-200">Target Temp \( T = 850^\circ\text{C} \). Ambient \( T_0 = 30^\circ\text{C} \)</div>
-                                        <div class="font-bold text-slate-500">Formula:</div><div class="text-slate-200 bg-black/30 p-1 rounded font-mono inline-block">Heat Energy \( Q = mc\Delta T \)</div>
-                                        <div class="font-bold text-slate-500">Interpret:</div><div class="text-red-300">Sustaining \(\Delta T = 820\text{K} \) in a closed reduction atmosphere required exact fuel-to-oxygen ratios, proving an advanced understanding of empirical pyrotechnology.</div>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Target stone alteration Temp \( T = 850^\circ\text{C} \). Ambient \( T_0 = 30^\circ\text{C} \)</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 bg-black/30 p-1 rounded font-mono inline-block">Heat Energy \( Q = mc\Delta T \)</div>
+                                        <div class="font-bold text-slate-500">Sensitivity:</div><div class="text-slate-200">Extremely sensitive heat capacity variation. Too hot: stone shatters. Too cool: chemical transformation fails.</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-red-300">Sustaining \(\Delta T = 820\text{K} \) in a closed reduction atmosphere required exact fuel-to-oxygen ratios, proving an empirical mastery of advanced pyrotechnology.</div>
                                     </div>
                                 </div>
                             </div>
@@ -905,12 +846,16 @@
                                     आपको ठोस पहियों वाली एक छोटी मिट्टी की गाड़ी (terracotta cart) दिखाई देगी, जो मैदानों को पार करने वाली वास्तविक bullock carts के आधार पर सटीकता से बनाई गई है। 
                                 </p>
                                 <p>
-                                    प्राचीन दुनिया में सिंधु घाटी पुरातत्वविदों द्वारा खोजे गए बच्चों के खिलौनों (terracotta toys) की आश्चर्यजनक मात्रा के लिए अद्वितीय है। 
+                                    प्राचीन दुनिया में सिंधु घाटी पुरातत्वविदों द्वारा खोजे गए बच्चों के खिलौनों (terracotta toys) की आश्चर्यजनक मात्रा के लिए अद्वितीय है। यहाँ से पक्षियों के आकार की सीटी, तारों से खिसकने वाले चढ़ते हुए बंदर, भूलभुलैया (mazes) और पासे (dice) मिले हैं। 
                                 </p>
-                                <div class="flex gap-2 mb-2 mt-2"><span class="px-2 py-0.5 border text-[9px] font-bold uppercase tracking-wider bg-[var(--inference-bg)] border-[var(--inference-border)] text-[var(--inference-text)] rounded-sm">Strong Inference</span></div>
-                                <p class="text-[11px] text-slate-400 italic">
-                                    The near-total absence of weaponry in archaeological strata, coupled with the abundance of toys, strongly infers a society built on commerce and civic management rather than military conquest.
-                                </p>
+                                
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>Alternative View:</strong> Some early scholars viewed these miniature carts as votive offerings to deities, but modern consensus leans heavily toward them being children's toys.</p>
+                                    <p class="text-[10px] text-slate-400 italic mt-2">
+                                        <span class="text-[var(--inference-text)] font-bold">Strong Inference:</span> The near-total absence of weaponry in archaeological strata, coupled with the abundance of toys, strongly infers a society built on commerce and civic management rather than military conquest.
+                                    </p>
+                                </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-rose-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
                                 Read More <i class="ph-bold ph-caret-down"></i>
@@ -936,22 +881,26 @@
                                 <p>
                                     पुरातत्वविदों को 1 मिलियन वर्ग किलोमीटर के विशाल क्षेत्र में फैले पूरी तरह से पॉलिश किए गए, घनाकार chert weights (पत्थर के बाँट) मिले हैं। आश्चर्यजनक रूप से, गुजरात से लेकर पंजाब तक इन weights में त्रुटि (margin of error) 2% से भी कम है। 
                                 </p>
+                                <p>
+                                    यह निम्न सांख्यिकीय भिन्नता (low statistical variance) भारी रूप से एक केंद्रीकृत राज्य मानक ब्यूरो (state bureau of standards) का संकेत देती है, जो व्यापारियों के लिए मास्टर वज़न कैलिब्रेट करता था ताकि पूरे साम्राज्य में निष्पक्ष व्यापार हो सके। उनका वजन सिस्टम बाइनरी (1, 2, 4, 8) और दशमलव (10, 20, 100) का एक जटिल मिश्रण था।
+                                </p>
                                 
-                                <div class="artifact-panel flex gap-3 p-3 bg-slate-800/80 border border-slate-600 rounded mt-3">
-                                    <div class="w-16 h-16 bg-slate-900 rounded flex items-center justify-center border border-slate-700 shadow-inner flex-shrink-0"><i class="ph-fill ph-cube text-3xl text-purple-400"></i></div>
-                                    <div>
-                                        <h6 class="font-bold text-white text-xs mb-1">Cubical Chert Weight</h6>
-                                        <p class="text-[10px] text-slate-400 leading-tight">Base unit: ~13.6g. Follows a binary (1, 2, 4, 8) then decimal (10, 20, 100) scale. Essential for regulating the empire's vast economy.</p>
-                                    </div>
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">Thousands of highly standardized chert stone weights.</span></li>
+                                    </ul>
                                 </div>
 
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-purple-500 p-4 rounded mt-4 font-sans text-xs">
-                                    <h5 class="text-purple-400 font-bold mb-2">Error Estimation</h5>
-                                    <p class="text-slate-300 mb-2 text-[10px]">Testing a sample of 13.6g weights yields the variance:</p>
-                                    <div class="text-slate-200 font-mono bg-black/30 p-2 rounded text-center text-[10px]">
-                                        $$\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2} \approx 0.018\text{g}$$
+                                    <h5 class="text-purple-400 font-bold mb-2">Error Estimation & Variance</h5>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Base unit weights hovering precisely around \(\mu \approx 13.63\text{g}\).</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">$$ \sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2} $$</div>
+                                        <div class="font-bold text-slate-500">Result:</div><div class="text-slate-200">Standard deviation \( \sigma < 0.2\% \) across vast distances.</div>
+                                        <div class="font-bold text-slate-500">Sensitivity:</div><div class="text-slate-200">Even accounting for natural wear over centuries, the original minting tolerance must have been even tighter.</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-purple-300">This minute tolerance is physically impossible without a centralized calibration authority validating all merchant weights.</div>
                                     </div>
-                                    <p class="text-purple-300 mt-2 text-[10px]">This minute tolerance (\(< 0.2\%\)) is physically impossible without a centralized Bureau of Standards calibrating master weights.</p>
                                 </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-purple-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
@@ -976,18 +925,25 @@
                             </p>
                             <div class="expandable-content hidden mt-3 space-y-3">
                                 <p>
-                                    ये छोटी, वर्गाकार कलाकृतियां, जो आमतौर पर डाक टिकट से बड़ी नहीं होती थीं, IVC प्रशासन और वाणिज्य (commerce) की रीढ़ थीं। इन्हें नरम steatite stone से नकारात्मक (intaglio) नक्काशी कर के उकेरा जाता था।
+                                    ये छोटी, वर्गाकार कलाकृतियां, जो आमतौर पर डाक टिकट से बड़ी नहीं होती थीं, IVC प्रशासन और वाणिज्य (commerce) की रीढ़ थीं। इन्हें नरम steatite stone से नकारात्मक (intaglio) नक्काशी कर के उकेरा जाता था, और फिर एक कठोर, सफेद फिनिश पाने के लिए भट्टी में बेक किया जाता था।
                                 </p>
                                 <p>
-                                    व्यापारियों ने इन मुहरों को माल की बोरियों पर लगी गीली मिट्टी में दबाकर अपने शिपमेंट को सील और टैग किया। 
+                                    व्यापारियों ने इन मुहरों को माल की बोरियों पर लगी गीली मिट्टी (wet clay) में दबाकर अपने शिपमेंट को सील और टैग किया। 
                                 </p>
+
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>The Farmer/Sproat Hypothesis:</strong> Argues that the symbols are not a true linguistic script but non-linguistic family or guild heraldry.</p>
+                                    <p class="text-[10px] text-slate-300"><strong>Competing View:</strong> Most scholars believe it encodes a Dravidian or early Indo-Aryan language, supported by the Shannon Entropy calculations below.</p>
+                                </div>
+
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-zinc-400 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-zinc-300 font-bold mb-2">Information Systems Theory</h5>
-                                    <p class="text-slate-300 mb-2 text-[10px]">Using Shannon Entropy to analyze the undeciphered script:</p>
-                                    <div class="text-slate-200 font-mono bg-black/30 p-2 rounded text-center text-[10px]">
-                                        $$H = -\sum p_i \log_2 p_i$$
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Undeciphered symbols \( x_i \).</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded text-center inline-block">Shannon Entropy \( H = -\sum p_i \log_2 p_i \)</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-zinc-400">The conditional entropy matches known linguistic systems perfectly, strongly implying it encodes actual language, not just random symbols.</div>
                                     </div>
-                                    <p class="text-zinc-400 mt-2 text-[10px]">The conditional entropy of the Indus script matches known linguistic systems (like Sumerian or Old Tamil), strongly implying it encodes actual language, not just random symbols or family heraldry.</p>
                                 </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-zinc-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
@@ -1014,12 +970,21 @@
                                 <p>
                                     नीचे रॉक-कट (rock-cut) विशाल कदम संरचनाओं (step-wells) को देखें। चूँकि धौलावीरा में बारहमासी नदी नहीं थी, इसलिए हड़प्पावासियों ने अपने पूरे शहर को एक इंजीनियरिंग चमत्कार—एक वर्षा-संचयन मशीन (rain-harvesting machine) में बदल दिया।
                                 </p>
+                                
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">16 linked rock-cut reservoirs surrounding the citadel.</span></li>
+                                    </ul>
+                                </div>
+
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-cyan-500 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-cyan-400 font-bold mb-2 flex items-center gap-2"><i class="ph-bold ph-calculator"></i> Reservoir Capacity Calculation</h5>
-                                    <div class="grid grid-cols-[70px_1fr] gap-y-2 gap-x-2 text-[10px]">
-                                        <div class="font-bold text-slate-500">Given:</div><div class="text-slate-200">Eastern Reservoir Dimensions: 73m x 29m x 10m deep.</div>
-                                        <div class="font-bold text-slate-500">Calculation:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">\( V = 73 \times 29 \times 10 \approx 21,170 \text{ m}^3 \)</div>
-                                        <div class="font-bold text-slate-500">Interpret:</div><div class="text-cyan-300">Just one of the 16 linked reservoirs held over 21 million liters. By calculating evaporation rates, engineers ensured enough stored water to sustain the city through the 9-month dry season.</div>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Observed:</div><div class="text-slate-200">Eastern Reservoir: 73m x 29m x 10m deep.</div>
+                                        <div class="font-bold text-slate-500">Model:</div><div class="text-slate-200 font-mono bg-black/30 p-1 rounded inline-block">\( V = 73 \times 29 \times 10 \approx 21,170 \text{ m}^3 \)</div>
+                                        <div class="font-bold text-slate-500">Limitations:</div><div class="text-slate-200">Ignores water lost to slow rock seepage and intense desert evaporation over 9 months.</div>
+                                        <div class="font-bold text-slate-500">Interpret:</div><div class="text-cyan-300">Just one reservoir held over 21 million liters. Engineers minimized surface area relative to depth to mathematically reduce evaporation losses.</div>
                                     </div>
                                 </div>
                             </div>
@@ -1048,8 +1013,20 @@
                                     दस विशाल अक्षर, जिनमें से प्रत्येक लगभग 37 सेमी लंबा है, पॉलिश किए गए सफेद gypsum (खनिज) से सावधानीपूर्वक उकेरे गए थे। एक लकड़ी के बोर्ड में जड़े हुए ये अक्षर मुख्य द्वार के ऊपर लटके हुए थे। 
                                 </p>
                                 <p>
-                                    इसे व्यापक रूप से दुनिया का सबसे पुराना ज्ञात public signboard (सार्वजनिक साइनबोर्ड) माना जाता है। इसका स्मारकीय सार्वजनिक प्रदर्शन एक साक्षर आबादी (literate populace) का संकेत देता है।
+                                    इसे व्यापक रूप से दुनिया का सबसे पुराना ज्ञात public signboard (सार्वजनिक साइनबोर्ड) माना जाता है। 
                                 </p>
+                                
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">The 10 gypsum letters found fallen flat just outside the gate.</span></li>
+                                        <li class="flex items-start gap-2"><span class="text-blue-400 w-16 flex-shrink-0">Inferred:</span> <span class="text-slate-300">They were originally inlaid in a wooden board suspended above the entrance.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>Alternative View:</strong> Some scholars propose these massive letters served an astronomical or calendrical function rather than a linguistic one.</p>
+                                </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-slate-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
                                 Read More <i class="ph-bold ph-caret-down"></i>
@@ -1075,10 +1052,18 @@
                                 <p>
                                     नीचे गहरी मिट्टी में ज्यामितीय लहरों (geometric ripples) पर ध्यान दें। पुरातत्वविदों ने यहाँ दुनिया के सबसे पुराने ज्ञात ploughed field (जुते हुए खेत) का पता लगाया, जो 2800 BCE का है। 
                                 </p>
+                                
+                                <div class="my-3 bg-slate-900/60 border border-slate-700 rounded p-3">
+                                    <h6 class="text-[10px] text-slate-400 uppercase tracking-widest mb-2 font-bold">Epistemic Reconstruction Framework</h6>
+                                    <ul class="text-[10px] space-y-1">
+                                        <li class="flex items-start gap-2"><span class="text-emerald-400 w-16 flex-shrink-0">Excavated:</span> <span class="text-slate-300">Intact furrow marks preserved beneath later occupational layers (stratigraphy dating).</span></li>
+                                    </ul>
+                                </div>
+
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-lime-500 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-lime-400 font-bold mb-2">Geometric Planting Strategy</h5>
                                     <p class="text-slate-300 mb-2 text-[10px]">A dual-furrow system with rows intersecting at perfect right angles.</p>
-                                    <p class="text-lime-300 text-[10px]">East-West rows (spaced 30cm) for shorter crops (gram). North-South rows (spaced 190cm) for taller crops (mustard). This specific geometry mathematically prevents the taller crop from casting shadows on the shorter one throughout the solar transit, maximizing photosynthetic yield.</p>
+                                    <p class="text-lime-300 text-[10px]">East-West rows (spaced 30cm) for shorter crops (gram). North-South rows (spaced 190cm) for taller crops (mustard). This specific geometry mathematically prevents the taller crop from casting shadows on the shorter one throughout the solar transit, optimizing photosynthetic yield.</p>
                                 </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-lime-500 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
@@ -1106,8 +1091,14 @@
                                     नीचे सात अंडाकार आग के गड्ढों (oval fire pits) की एक पंक्ति वाले raised mud-brick platform को देखें।
                                 </p>
                                 <p>
-                                    इन "fire altars" (अग्नि वेदियों) के अंदर, पुरातत्वविदों को राख, चारकोल, जानवरों की हड्डियाँ और केंद्रीय बेलनाकार मिट्टी के ब्लॉक (terracotta cakes) मिले। यह दर्शाता है कि 1 मिलियन वर्ग किलोमीटर के हड़प्पाई क्षेत्र में पूर्ण एकरूपता नहीं, बल्कि सांस्कृतिक विविधता (cultural diversity) थी।
+                                    इन "fire altars" (अग्नि वेदियों) के अंदर, पुरातत्वविदों को राख, चारकोल, जानवरों की हड्डियाँ और केंद्रीय बेलनाकार मिट्टी के ब्लॉक (terracotta cakes) मिले। 
                                 </p>
+                                
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>The Vedic Altar Debate:</strong> B.B. Lal argued these represented early Vedic fire rituals (Yajna). This connects to theories of Indo-Aryan cultural continuity.</p>
+                                    <p class="text-[10px] text-slate-300"><strong>Alternative View:</strong> Other archaeologists suggest these are simply specialized domestic or communal ovens, disconnected from later Vedic practices.</p>
+                                </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-orange-500 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
                                 Read More <i class="ph-bold ph-caret-down"></i>
@@ -1133,11 +1124,16 @@
                                 <p>
                                     नीचे विशाल पकी हुई ईंटों का बेसिन (baked-brick basin) है, जो 214 मीटर लंबा है। यह दुनिया का पहला ज्ञात ज्वारीय गोदी (tidal dockyard) है, जो परिष्कृत sluice gates (जलद्वार) से सुसज्जित है।
                                 </p>
-                                
+
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>The Dockyard Debate:</strong> S.R. Rao interpreted this as a massive dockyard. L.S. Leshnik strongly argued it was merely a fresh-water irrigation tank.</p>
+                                </div>
+
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-blue-500 p-4 rounded mt-4 font-sans text-xs">
-                                    <h5 class="text-blue-400 font-bold mb-2">Tidal Lock Simulation / Math</h5>
+                                    <h5 class="text-blue-400 font-bold mb-2">Tidal Lock Simulation</h5>
                                     <p class="text-slate-300 mb-2 text-[10px]">Gulf of Khambhat possesses the highest tidal range in India (\( \approx 10\text{m} \)).</p>
-                                    <p class="text-blue-300 text-[10px]">Harappan engineers constructed the basin off the main river current to avoid siltation. They designed the sluice gates to open at high tide, admitting ships and water, then locked the gates to maintain a stable water depth inside the basin during low tide, enabling continuous loading of cargo.</p>
+                                    <p class="text-blue-300 text-[10px]">Harappan engineers constructed the basin off the main river current to avoid siltation. They mathematically designed the sluice gates to open at high tide, admitting ships, then locked the gates to maintain depth during low tide, enabling continuous loading.</p>
                                 </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-blue-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
@@ -1164,10 +1160,18 @@
                                 <p>
                                     दशकों तक, historians का मानना था कि क्रूर Aryan invaders ने सिंधु शहरों को नष्ट कर दिया। लेकिन Modern science (आइसोटोप डेटिंग और सैटेलाइट इमेजरी) एक अलग कहानी बताती है: जलवायु परिवर्तन (climate change).
                                 </p>
+                                
+                                <div class="my-3 bg-slate-800/50 border-l-2 border-slate-500 p-3">
+                                    <h6 class="text-[10px] text-white uppercase tracking-widest mb-1 font-bold flex items-center gap-1"><i class="ph-bold ph-scales"></i> Academic Discourse</h6>
+                                    <p class="text-[10px] text-slate-300 mb-1"><strong>Aryan Invasion vs Climate:</strong> Mortimer Wheeler's invasion theory is now largely obsolete. Scientific consensus supports tectonic shifts and a weakened monsoon starving the Ghaggar-Hakra river system.</p>
+                                </div>
+
                                 <div class="worked-example bg-slate-900/90 border-l-4 border-yellow-700 p-4 rounded mt-4 font-sans text-xs">
                                     <h5 class="text-yellow-500 font-bold mb-2">Statistical Modeling of Climate Shift</h5>
-                                    <p class="text-slate-300 mb-2 text-[10px]">Speleothem (cave stalagmite) oxygen isotope (\(\delta^{18}\text{O}\)) records reveal:</p>
-                                    <p class="text-yellow-400 text-[10px]">A sharp decrease in monsoon rainfall beginning ~2100 BCE, lasting 200 years. The statistical probability of river flow supporting a dense urban center collapsed. The people didn't die out; they migrated east toward the Ganges basin.</p>
+                                    <div class="grid grid-cols-[80px_1fr] gap-y-2 gap-x-2 text-[10px]">
+                                        <div class="font-bold text-slate-500">Evidence:</div><div class="text-slate-200">Speleothem (cave stalagmite) oxygen isotope (\(\delta^{18}\text{O}\)) records.</div>
+                                        <div class="font-bold text-slate-500">Interpretation:</div><div class="text-yellow-400">A sharp decrease in monsoon rainfall beginning ~2100 BCE, lasting 200 years. The statistical probability of river flow supporting a dense urban center collapsed. The people didn't die out; they migrated east toward the Ganges basin.</div>
+                                    </div>
                                 </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-yellow-600 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
@@ -1197,6 +1201,9 @@
                                 <p>
                                     आधुनिक पुरातत्व (Computational Archaeology) अब फावड़े से ज्यादा कंप्यूटर पर निर्भर है। <strong>Uncertainty estimation</strong> और statistical modeling हमें यह समझने में मदद करते हैं कि मिट्टी के नीचे वास्तव में क्या था, जो इतिहास को केवल कहानियों के बजाय एक <strong>सटीक विज्ञान (exact science)</strong> बनाता है।
                                 </p>
+                                <div class="inline-flex items-center gap-2 px-3 py-1.5 mt-2 bg-emerald-500/20 text-emerald-300 rounded text-xs font-bold border border-emerald-500/50">
+                                    <i class="ph-fill ph-cpu"></i> PROCEDURAL GENERATION & LiDAR
+                                </div>
                             </div>
                             <button onclick="toggleReadMore(this)" class="mt-3 text-emerald-400 text-[11px] uppercase font-bold tracking-widest flex items-center gap-1 hover:text-white transition-colors">
                                 Read More <i class="ph-bold ph-caret-down"></i>
@@ -1259,7 +1266,6 @@
                 <div class="my-10 p-6 bg-white border border-gray-300 shadow-sm rounded">
                     <div class="flex justify-between items-center border-b border-gray-200 pb-2 mb-4">
                         <h3 class="!mt-0 !mb-0 text-left">Table 1.1: Data Classification</h3>
-                        <span class="text-xs text-gray-500 font-mono">Click headers to sort</span>
                     </div>
                     <figcaption><strong>Table 1.1.</strong> \( n \) is the number of coins with the number \( x \) of reverse marks given at the column head, and \( m \) the average weight in grains.</figcaption>
                     <div style="overflow-x: auto;">
@@ -1409,7 +1415,7 @@
 
                 <h3 class="mt-8 mb-4 border-b-2 border-black pb-2 text-left font-serif text-2xl">Table 6.1 & 10.1: Analysis of Variance (Comparative)</h3>
                 <div style="overflow-x: auto;" class="mb-12 bg-white border border-gray-300 p-1 shadow-sm rounded-lg">
-                    <table class="sortable-table">
+                    <table>
                         <thead>
                             <tr><th>Source</th><th>d.f.</th><th>Sum-square</th><th>Mean sq.</th><th>F</th><th>reg. coeff.</th></tr>
                         </thead>
@@ -1435,7 +1441,7 @@
                     <div>
                         <h3 class="mt-0 mb-3 border-b-2 border-black pb-1 text-left font-serif text-xl">Table 4.5: Adjusted Groups</h3>
                         <div style="overflow-x: auto;" class="bg-white border border-gray-300 p-1 shadow-sm rounded-lg">
-                            <table class="sortable-table">
+                            <table>
                                 <thead><tr><th>x</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr></thead>
                                 <tbody>
                                     <tr><td>n</td><td>275</td><td>161</td><td>159</td><td>111</td><td>88</td><td>53</td><td>34</td><td>31</td></tr>
@@ -1448,7 +1454,7 @@
                     <div>
                         <h3 class="mt-0 mb-3 border-b-2 border-black pb-1 text-left font-serif text-xl">Table 10.2: Statistics by Groups</h3>
                         <div style="overflow-x: auto;" class="bg-white border border-gray-300 p-1 shadow-sm rounded-lg">
-                            <table class="sortable-table">
+                            <table>
                                 <thead><tr><th>group</th><th>no. coins</th><th>wt. (mgm)</th><th>variance</th><th>\( \sqrt{r.m.+.5} \)</th><th>index</th></tr></thead>
                                 <tbody>
                                     <tr><td>I</td><td>211</td><td>2614.7</td><td>13037.0</td><td>1.4</td><td>2.0</td></tr>
@@ -1464,7 +1470,7 @@
                 
                 <h3 class="mt-12 mb-4 border-b-2 border-black pb-2 text-left font-serif text-2xl">Large Classification Table</h3>
                 <div style="overflow-x: auto;" class="bg-white border border-gray-300 p-2 shadow-sm rounded-lg mb-16">
-                    <table class="sortable-table">
+                    <table>
                         <thead>
                             <tr>
                                 <th rowspan="2" style="text-align:left;">group</th>
@@ -1601,13 +1607,13 @@
                 <!-- MAURYAN CHRONOLOGY & SYMBOLS -->
                 <div class="teaching-note mt-16">
                     <h4><i class="ph-fill ph-pen-nib"></i> Teaching Note: The "Script" of the Empire</h4>
-                    <p>नीचे दी गई टेबल्स (Table 11.1 & 11.2) में मौर्यकालीन चिह्नों (Symbols) का विकास दिखाया गया है। <strong>Sun</strong> और <strong>Six-armed</strong> चिह्न केंद्रीय मौर्य साम्राज्य को दर्शाते हैं। ये चिह्न एकदम सटीकता से कॉलम में संरेखित (aligned) किए गए हैं।</p>
+                    <p>नीचे दी गई टेबल्स में मौर्यकालीन चिह्नों (Symbols) का विकास दिखाया गया है। <strong>Sun</strong> और <strong>Six-armed</strong> चिह्न केंद्रीय मौर्य साम्राज्य को दर्शाते हैं। ये चिह्न एकदम सटीकता से कॉलम में संरेखित (aligned) किए गए हैं।</p>
                 </div>
 
                 <h3 class="border-b-2 border-black pb-2 mt-10 text-left font-serif text-2xl">Table 11.1 & 11.2: Pre-Mauryan to Parallel Mauryan Issues</h3>
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-10">
                     <div style="overflow-x: auto;" class="bg-white border border-gray-300 p-2 shadow-sm rounded-lg">
-                        <table class="w-full text-sm sortable-table">
+                        <table class="w-full text-sm">
                             <thead><tr><th>class</th><th>symbols</th><th>n</th><th>wt</th></tr></thead>
                             <tbody>
                                 <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
@@ -1634,7 +1640,7 @@
                         </table>
                     </div>
                     <div style="overflow-x: auto;" class="bg-white border border-gray-300 p-2 shadow-sm rounded-lg">
-                        <table class="w-full text-sm sortable-table">
+                        <table class="w-full text-sm">
                             <thead><tr><th>class</th><th>symbols</th><th>n</th><th>wt</th></tr></thead>
                             <tbody>
                                 <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
@@ -1676,16 +1682,6 @@
                         <p class="text-slate-300">
                             This methodology is fundamentally analogous to techniques employed in modern physics. <strong>Distribution functions</strong> determine the legal allowance of mints, while <strong>variance evolution</strong> maps the exponential decay of a coin's mass as it circulates through centuries of trade. Every punch mark incrementally shifts the coin along an <strong>absorption curve</strong>, allowing us to perform parameter estimation with remarkable precision.
                         </p>
-                        
-                        <div class="bg-black/40 p-6 rounded-lg border border-slate-800 my-8">
-                            <h4 class="text-emerald-400 font-bold mb-4 font-mono text-sm uppercase tracking-wider">Mathematical Derivation: Diffusion Equation for Wear</h4>
-                            <p class="text-sm text-slate-400 mb-4">Kosambi implicitly modeled coin wear as a Fokker-Planck (diffusion) process. If \( w \) is the weight of a coin and \( t \) is time (or number of reverse punches), the evolution of the weight probability distribution \( P(w,t) \) is given by:</p>
-                            <div class="text-white text-center py-4 bg-black/60 rounded overflow-x-auto">
-                                $$\frac{\partial P(w,t)}{\partial t} = D \frac{\partial^2 P(w,t)}{\partial w^2} - v \frac{\partial P(w,t)}{\partial w}$$
-                            </div>
-                            <p class="text-sm text-slate-400 mt-4">Where \( v \) is the mean wear rate (drift velocity) and \( D \) is the variance accumulation (diffusion coefficient). This proves that the broadening of the Gaussian curves in Figure 12.6 is a strict thermodynamic necessity, not archaeological chance.</p>
-                        </div>
-
                         <p class="text-slate-300">
                             Ultimately, chronological inference from these noisy observations transforms numismatics from a descriptive art into an exact <strong>inverse problem</strong>. Just as astronomy or particle physics reconstructs hidden states from sparse signals via <strong>Bayesian inference</strong>, we reconstruct the hidden historical variables (state power, economic output, and centralization) that dictated the Pre-Mauryan to Mauryan transitions directly from the metallic dust left behind.
                         </p>
@@ -1750,9 +1746,6 @@
                 slopeSlider.addEventListener('input', function() {
                     const s = parseFloat(this.value);
                     slopeVal.innerText = s.toFixed(3);
-                    
-                    // Manning's Eq mock calculation: V = (1/n) * R^(2/3) * S^(1/2)
-                    // Assuming n=0.013, R=0.2m
                     const v = (1 / 0.013) * Math.pow(0.2, 2/3) * Math.pow(s, 0.5);
                     velVal.innerText = v.toFixed(2) + ' m/s';
                     
@@ -1768,56 +1761,6 @@
                     }
                 });
             }
-
-            // Table Sorting Logic
-            document.querySelectorAll('.sortable-table th').forEach(headerCell => {
-                headerCell.addEventListener('click', () => {
-                    const tableElement = headerCell.parentElement.parentElement.parentElement;
-                    const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
-                    const currentIsAscending = headerCell.classList.contains('th-sort-asc');
-                    
-                    sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
-                });
-            });
-        }
-
-        function sortTableByColumn(table, column, asc = true) {
-            const dirModifier = asc ? 1 : -1;
-            const tBody = table.tBodies[0];
-            const rows = Array.from(tBody.querySelectorAll('tr'));
-            
-            // Filter out rows that are acting as headers or have colspan
-            const sortableRows = rows.filter(row => !row.cells[0].hasAttribute('colspan'));
-
-            const sortedRows = sortableRows.sort((a, b) => {
-                // Safely handle missing cells
-                if (!a.cells[column] || !b.cells[column]) return 0;
-                
-                const aColText = a.cells[column].textContent.trim();
-                const bColText = b.cells[column].textContent.trim();
-                
-                // Try numeric sort first, fallback to string sort
-                const aNum = parseFloat(aColText.replace(/[^0-9.-]+/g,""));
-                const bNum = parseFloat(bColText.replace(/[^0-9.-]+/g,""));
-
-                if (!isNaN(aNum) && !isNaN(bNum)) {
-                    return aNum > bNum ? (1 * dirModifier) : (-1 * dirModifier);
-                }
-                
-                return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
-            });
-
-            // Re-append sorted rows. Warning: this simple sort might mess up complex rowspans.
-            // Used carefully only on flat data tables.
-            while (tBody.firstChild) { tBody.removeChild(tBody.firstChild); }
-            
-            // Re-add non-sortable rows at the top if they existed (simplified approach)
-            rows.filter(row => row.cells[0].hasAttribute('colspan')).forEach(row => tBody.appendChild(row));
-            tBody.append(...sortedRows);
-
-            table.querySelectorAll('th').forEach(th => th.classList.remove('th-sort-asc', 'th-sort-desc'));
-            table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle('th-sort-asc', asc);
-            table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle('th-sort-desc', !asc);
         }
 
         const Engine = {
